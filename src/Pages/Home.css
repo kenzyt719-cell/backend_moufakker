@@ -1,31 +1,33 @@
-.home{
-   background: #FCF9FF;
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 100vh; 
+.home {
+  background: #FCF9FF;
+  min-height: 100vh;
 }
-h1,h2,p{
-   padding: 0;
-    margin: 0;
-}
-body{
-   
-    margin: 0;
-  padding: 0;
-  overflow-x: hidden; 
+
+/* layout */
+.layout {
+  display: flex;
   width: 100%;
 }
 
-.margneleft{
-
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    /* justify-content: center; */
-    width: 83vw;
-    margin-left: 2vw;
+/* content (right side) */
+.content {
+  width: 80%;
+  padding: 30px;
 }
-.marginedivss{
-    display: flex;
+
+/* reset */
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.twodivs{
+  display: flex;
+  gap: 20px ;
+  
 }

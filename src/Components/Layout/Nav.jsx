@@ -16,7 +16,7 @@ import icon10 from "../../Assets/icon10.png";
 const Nav = () => {
   return (
     <div className="sidebar">
- 
+
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>

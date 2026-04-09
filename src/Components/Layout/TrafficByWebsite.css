@@ -1,0 +1,42 @@
+.traffic-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: "Lufga", sans-serif;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.traffic-card h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #4b33c6;
+}
+
+.traffic-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.traffic-row p {
+  width: 80px;
+  margin: 0;
+  color: #2c0c6b;
+  font-weight: 500;
+}
+
+.traffic-bar-bg {
+  flex: 1;
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  position: relative;
+}
+
+.traffic-bar-fill {
+  height: 100%;
+  background: linear-gradient(to right, #4b33c6, #a87aff);
+  border-radius: 3px;
+}

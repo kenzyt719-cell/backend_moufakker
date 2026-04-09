@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lufga:wght@400;700&display=swap');
+
+.performance-card {
+  font-family: 'Lufga', sans-serif;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.performance-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a0033; /* dark purple */
+}
+
+.class-row {
+  margin-bottom: 16px;
+}
+
+.class-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0;
+  color: #1a0033;
+}
+
+.student-count {
+  float: right;
+  font-size: 0.95rem;
+  color: #4b0082; /* purple */
+  margin: 0;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  height: 10px;
+  width: 100%;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background-color: #4b0082; /* purple */
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+  
+  width: 0; /* start from 0 */
+  animation: fillBar 1s forwards; /* duration 1s */
+  animation-timing-function: ease-out;
+}
+
+/* Use CSS variable for dynamic width */
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--fill-width);
+  }
+}

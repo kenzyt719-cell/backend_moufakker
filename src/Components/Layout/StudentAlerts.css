@@ -1,0 +1,65 @@
+.student-alerts-container {
+  width: 100%;
+  font-family: 'Lufga', sans-serif;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.alerts-title {
+  color: #4b0082;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.alert-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d8cfff;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+
+.alert-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.student-name {
+  font-size: 1.1rem;
+  color: #1f1f1f;
+  margin: 0;
+}
+
+.student-grade {
+  font-size: 0.9rem;
+  color: #4b0082;
+  margin: 2px 0;
+}
+
+.alert-description {
+  font-size: 0.95rem;
+  color: #6b00ff;
+  margin: 5px 0 0 0;
+}
+
+.risk-tag {
+  border: 1px solid #d8cfff;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  color: #1f1f1f;
+}
+
+.high-risk {
+  border-color: #a020f0;
+  color: #a020f0;
+}
+
+.medium-risk {
+  border-color: #9370db;
+  color: #9370db;
+}

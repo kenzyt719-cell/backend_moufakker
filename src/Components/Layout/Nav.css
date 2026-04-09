@@ -1,5 +1,5 @@
 .sidebar {
-  width: 15VW;
+  width: 20%;
   height: 100vh;
   background: linear-gradient(180deg, #5b3fd6, #4b2fb3);
   padding: 20px;
@@ -7,6 +7,7 @@
   flex-direction: column;
 }
 
+/* logo */
 .logo {
   margin-bottom: 40px;
   display: flex;
@@ -17,6 +18,7 @@
   width: 120px;
 }
 
+/* menu */
 .menu {
   display: flex;
   flex-direction: column;
@@ -33,34 +35,27 @@
   transition: 0.3s;
 }
 
-
 .item:hover {
   background: white;
 }
-
 
 .item p {
   color: white;
   font-size: 15px;
   font-family: "Lufga", sans-serif;
-  margin: 0;
   transition: 0.3s;
 }
-
 
 .item:hover p {
   color: #5b3fd6;
 }
 
-
 .item img {
   width: 20px;
   height: 20px;
-  filter: brightness(0) invert(1); /* يخليها أبيض */
+  filter: brightness(0) invert(1);
   transition: 0.3s;
 }
-
-
 
 .item:hover img {
   filter: brightness(0) saturate(100%) invert(27%) sepia(98%) saturate(1200%) hue-rotate(240deg);

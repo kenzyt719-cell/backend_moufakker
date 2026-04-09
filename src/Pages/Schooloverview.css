@@ -1,0 +1,53 @@
+.schoolinfo{
+    display: flex;
+width: 100vh;
+height: 124px;
+padding: 26px 26px 2px 26px;
+flex-direction: column;
+align-items: flex-start;
+border-radius: 14px;
+border: 2px solid #E7D9FF;
+background: #FFF;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.h1divschool{
+color: #340088;
+font-family: lufga;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px; /* 133.333% */
+letter-spacing: 0.07px;
+margin-bottom: 10px;
+}
+.h2divschool{
+color: #1B008E;
+font-family: lufga;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: -0.312px;
+margin-bottom: 10px;
+
+}
+.h3divschool{
+color: #1B008E;
+font-family: lufga;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+letter-spacing: -0.15px;
+}
+
+.divimg{
+        width: 64px;
+    margin-top: 20px;
+    height: 64px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+
+}

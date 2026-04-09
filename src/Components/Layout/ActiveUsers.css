@@ -1,0 +1,36 @@
+.active-users-card {
+  background-color: #4b33c6; /* Purple background for graph */
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  font-family: "Lufga", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.active-users-graph {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+    height: 190px;
+  margin-bottom: 20px;
+}
+
+.bar {
+  width: 2vw;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.active-users-text h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.active-users-text p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
