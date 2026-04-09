@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import Schooloverview from './Pages/Schooloverview';
 import Pageswebsite from './Pages/Pageswebsite';
 import EditScreenweb from './Pages/EditScreenweb';
+import  Messages from './Pages/Messages';
 
 
 
@@ -15,9 +16,10 @@ const RountingApp = () => {
         <Route path="/Schooloverview" element={<Schooloverview/>} />
         <Route path="/Pageswebsite" element={<Pageswebsite/>} />
         <Route path="/EditScreenweb" element={<EditScreenweb/>} />
+        <Route path="/Messages" element={<Messages/>} />
   
      
-        
+       
 
     </Routes>
     </BrowserRouter>
