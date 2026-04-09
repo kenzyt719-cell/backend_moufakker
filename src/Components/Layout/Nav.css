@@ -1,0 +1,67 @@
+.sidebar {
+  width: 15VW;
+  height: 100vh;
+  background: linear-gradient(180deg, #5b3fd6, #4b2fb3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.item:hover {
+  background: white;
+}
+
+
+.item p {
+  color: white;
+  font-size: 15px;
+  font-family: "Lufga", sans-serif;
+  margin: 0;
+  transition: 0.3s;
+}
+
+
+.item:hover p {
+  color: #5b3fd6;
+}
+
+
+.item img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* يخليها أبيض */
+  transition: 0.3s;
+}
+
+
+
+.item:hover img {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(98%) saturate(1200%) hue-rotate(240deg);
+}

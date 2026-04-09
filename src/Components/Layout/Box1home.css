@@ -1,0 +1,38 @@
+.box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  font-family: "Lufga";
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.item-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress {
+  height: 6px;
+  background: #eee;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #5a35ff;
+  border-radius: 10px;
+}
+
+.p70 { width: 70%; }
+.p85 { width: 85%; }
+.p80 { width: 80%; }

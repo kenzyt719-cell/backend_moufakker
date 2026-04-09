@@ -1,0 +1,31 @@
+.home{
+   background: #FCF9FF;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; 
+}
+h1,h2,p{
+   padding: 0;
+    margin: 0;
+}
+body{
+   
+    margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  width: 100%;
+}
+
+.margneleft{
+
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    /* justify-content: center; */
+    width: 83vw;
+    margin-left: 2vw;
+}
+.marginedivss{
+    display: flex;
+}

@@ -1,0 +1,8 @@
+.sidebar2 {
+    width: 100vw;
+    height: 10px;
+    background: linear-gradient(180deg, #5b3fd6, #4b2fb3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}

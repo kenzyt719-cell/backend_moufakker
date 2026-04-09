@@ -1,0 +1,31 @@
+.boxmain1{
+    
+    gap: 10px;
+    padding: 20px;
+    /* margin: 20px; */
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 90px;
+    border-radius: 18px;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);}
+.totalltext{
+color: #160027;
+font-family: Lufga;
+font-size: 15.678px;
+font-style: normal;
+font-weight: 400;
+line-height: 22.397px; /* 142.857% */
+letter-spacing: -0.168px;
+}
+.totalltext2{
+color: #160027;
+font-family: Lufga;
+font-size: 15.678px;
+font-style: normal;
+font-weight: 400;
+line-height: 22.397px; /* 142.857% */
+letter-spacing: -0.168px;
+}

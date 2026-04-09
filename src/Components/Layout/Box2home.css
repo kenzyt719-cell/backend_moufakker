@@ -1,0 +1,16 @@
+.p92 { width: 92%; }
+
+.attendance-box {
+  background: #f7f7f7;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.absent-item {
+  background: #efefef;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 8px;
+  font-size: 12px;
+}
