@@ -1,0 +1,94 @@
+.msg-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 20px;
+  border-radius: 14px;
+
+  border: 1px solid #eaccff;
+  background: #faf7ff;
+
+  transition: 0.2s;
+}
+
+.msg-item:hover {
+  background: #f3ecff;
+}
+
+/* LEFT */
+.msg-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 30%;
+}
+
+.msg-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #5e3d90;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+}
+
+.msg-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.msg-name {
+  font-size: 15px;
+  margin: 0;
+  color: #21023a;
+}
+
+.msg-title {
+  font-size: 13px;
+  margin: 0;
+  color: #777;
+}
+
+/* MIDDLE */
+.msg-middle {
+  width: 45%;
+}
+
+.msg-preview {
+  font-size: 14px;
+  color: #444;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* RIGHT */
+.msg-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.msg-time {
+  font-size: 13px;
+  color: #999;
+}
+
+.delete-icon {
+  width: 20px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.delete-icon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}

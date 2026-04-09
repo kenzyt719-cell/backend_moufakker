@@ -7,6 +7,7 @@ import ClassPerformance from "../Components/Layout/ClassPerformance";
 import ActiveUsers from "../Components/Layout/ActiveUsers";
 import TrafficByWebsite from "../Components/Layout/TrafficByWebsite";
 import StudentAlerts from "../Components/Layout/StudentAlerts";
+import Msgdiv from "../Components/Layout/Msgdiv";
 
 
 import "./Messages.css";
@@ -21,10 +22,11 @@ const Messages= () => {
 
         <div className="content">
           <TitleandSub 
-            title="Dashboard Overview" 
+            title="Messages" 
             subtitle="Welcome back" 
           />
 
+       <Msgdiv />
         
 
 

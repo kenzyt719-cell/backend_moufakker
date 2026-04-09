@@ -1,6 +1,5 @@
 import React from "react";
 import "./ProjectTable.css";
-// import photoprojects from "../../Assets/photoprojects.svg";
 
 const ProjectTable = () => {
   const projects = [
@@ -25,51 +24,56 @@ const ProjectTable = () => {
   ];
 
   return (
-    <div className="project-table-container">
-      <table className="project-table">
-        <thead>
-          <tr>
-            <th>Image</th>
-            <th>Tag</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th>Edit</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {projects.map((item) => (
-            <tr key={item.id}>
-              <td>
-                <img
-          
-                  alt="project"
-                  className="project-image"
-                />
-              </td>
-
-              <td>{item.tag}</td>
-              <td>{item.description}</td>
-
-              <td>
-                <span
-                  className={
-                    item.status === "Published"
-                      ? "status-published"
-                      : "status-unpublished"
-                  }
-                >
-                  {item.status}
-                </span>
-              </td>
-
-              <td>
-                <button className="edit-btn">Edit</button>
-              </td>
+    <div className="table-container">
+      <div className="table-card">
+        <table className="table">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Tag</th>
+              <th>Description</th>
+              <th>Status</th>
+              <th>Edit</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+
+          <tbody>
+            {projects.map((item) => (
+              <tr key={item.id}>
+                <td>
+                  <div className="img-box">
+                    <span>Upload</span>
+                  </div>
+                </td>
+
+                <td>
+                  <span className="text">{item.tag}</span>
+                </td>
+
+                <td>
+                  <span className="text">{item.description}</span>
+                </td>
+
+                <td>
+                  <span
+                    className={
+                      item.status === "Published"
+                        ? "status published"
+                        : "status unpublished"
+                    }
+                  >
+                    {item.status}
+                  </span>
+                </td>
+
+                <td>
+                  <button className="edit-btn">Edit</button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
