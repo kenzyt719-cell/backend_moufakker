@@ -5,6 +5,7 @@ import Schooloverview from './Pages/Schooloverview';
 import Pageswebsite from './Pages/Pageswebsite';
 import EditScreenweb from './Pages/EditScreenweb';
 import  Messages from './Pages/Messages';
+import  ChatScreen from './Pages/ChatScreen';
 
 
 
@@ -17,6 +18,7 @@ const RountingApp = () => {
         <Route path="/Pageswebsite" element={<Pageswebsite/>} />
         <Route path="/EditScreenweb" element={<EditScreenweb/>} />
         <Route path="/Messages" element={<Messages/>} />
+        <Route path="/ChatScreen" element={<ChatScreen/>} />
   
      
        
