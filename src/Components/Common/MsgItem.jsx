@@ -1,14 +1,14 @@
 import React from "react";
 import "./MsgItem.css";
-
 import trash from "../../Assets/trash.svg";
 
 const MsgItem = ({ id, name, title, preview, time, onDelete }) => {
   return (
     <div className="msg-item">
-
       <div className="msg-left">
-        <div className="msg-avatar">{name.charAt(0)}</div>
+        <div className="msg-avatar">
+          {name?.charAt(0)}
+        </div>
 
         <div className="msg-text">
           <h3 className="msg-name">{name}</h3>
@@ -30,7 +30,6 @@ const MsgItem = ({ id, name, title, preview, time, onDelete }) => {
           onClick={() => onDelete(id)}
         />
       </div>
-
     </div>
   );
 };

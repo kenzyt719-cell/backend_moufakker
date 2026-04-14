@@ -1,48 +1,43 @@
 import React, { useEffect, useState } from "react";
 import "./Msgdiv.css";
 import MsgItem from "../Common/MsgItem";
+import { supabase } from "../../supabaseClient";
 
 const Msgdiv = () => {
-  const [loading, setLoading] = useState(true);
   const [messages, setMessages] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const data = [
-      {
-        id: 1,
-        first_name: "John",
-        last_name: "Doe",
-        email: "john@example.com",
-        msg: "Hello, I need help with my account.",
-        created_at: "2026-04-09",
-      },
-      {
-        id: 2,
-        first_name: "Sara",
-        last_name: "Ali",
-        email: "sara@example.com",
-        msg: "Can you assist me with my order?",
-        created_at: "2026-04-08",
-      },
-      {
-        id: 3,
-        first_name: "Omar",
-        last_name: "Hassan",
-        email: "omar@example.com",
-        msg: "This is an important message.",
-        created_at: "2026-04-07",
-      },
-    ];
+    async function fetchMessages() {
+      const { data, error } = await supabase
+        .from("contact")
+        .select("*")
+        .order("id", { ascending: false });
 
-    setMessages(data);
-    setLoading(false);
+      if (error) {
+        console.error(error);
+      } else {
+        setMessages(data || []);
+      }
+
+      setLoading(false);
+    }
+
+    fetchMessages();
   }, []);
 
-  function deleteMessage(id) {
-    setMessages((prev) => prev.filter((msg) => msg.id !== id));
+  async function deleteMessage(id) {
+    const { error } = await supabase
+      .from("contact")
+      .delete()
+      .eq("id", id);
+
+    if (!error) {
+      setMessages((prev) => prev.filter((msg) => msg.id !== id));
+    }
   }
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p>Loading messages...</p>;
   if (messages.length === 0) return <p>No messages</p>;
 
   return (
@@ -52,10 +47,10 @@ const Msgdiv = () => {
           <MsgItem
             key={msg.id}
             id={msg.id}
-            name={`${msg.first_name} ${msg.last_name}`}
-            title={msg.email}
-            preview={msg.msg}
-            time={msg.created_at}
+            name={msg.name}        // ✅ FROM DB
+            title={msg.email}      // ✅ FROM DB
+            preview={msg.message}  // ✅ FROM DB
+            time={msg.number || "No number"}
             onDelete={deleteMessage}
           />
         ))}

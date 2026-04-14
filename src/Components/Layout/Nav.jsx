@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 
 import logo from "../../Assets/logo.png";
@@ -23,16 +24,19 @@ const Nav = () => {
 
       <div className="menu">
 
-        <div className="item">
+        {/* Dashboard */}
+        <Link to="/" className="item">
           <img src={icon1} alt="" />
           <p>Dashboard</p>
-        </div>
+        </Link>
 
-        <div className="item">
+        {/* School Overview */}
+        <Link to="/Schooloverview" className="item">
           <img src={icon2} alt="" />
           <p>School Overview</p>
-        </div>
+        </Link>
 
+        {/* دول لسه مش مربوطين - نسيبهم عادي */}
         <div className="item">
           <img src={icon3} alt="" />
           <p>Classes</p>
@@ -53,16 +57,19 @@ const Nav = () => {
           <p>Attendance</p>
         </div>
 
-        <div className="item">
+        {/* Messages */}
+        <Link to="/Messages" className="item">
           <img src={icon7} alt="" />
           <p>Messages</p>
-        </div>
+        </Link>
 
-        <div className="item">
+        {/* Screens Website */}
+        <Link to="/Pageswebsite" className="item">
           <img src={icon8} alt="" />
           <p>Screens Website</p>
-        </div>
+        </Link>
 
+        {/* لسه مش مربوط */}
         <div className="item">
           <img src={icon9} alt="" />
           <p>Screens App</p>

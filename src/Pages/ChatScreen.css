@@ -157,7 +157,7 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* SEND BUTTON */
+
 
 .send-btn {
   width: 55px;
@@ -175,7 +175,6 @@
   opacity: 0.8;
 }
 
-/* -------------- RESPONSIVE DESIGN -------------- */
 
 @media (max-width: 900px) {
   .chat-wrapper {

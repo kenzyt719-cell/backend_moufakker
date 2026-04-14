@@ -1,27 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./ProjectTable.css";
+import { supabase } from "../../supabaseClient";
+
 
 const ProjectTable = () => {
-  const projects = [
-    {
-      id: 1,
-      tag: "UI/UX",
-      description: "Design system for mobile app",
-      status: "Published",
-    },
-    {
-      id: 2,
-      tag: "Web",
-      description: "Landing page for startup",
-      status: "Unpublished",
-    },
-    {
-      id: 3,
-      tag: "Branding",
-      description: "Full brand identity",
-      status: "Published",
-    },
-  ];
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetchScreens();
+  }, []);
+
+  const fetchScreens = async () => {
+    const { data, error } = await supabase
+      .from("screens_web")
+      .select("*");
+
+    if (error) {
+      console.error("Error fetching data:", error);
+    } else {
+      setProjects(data);
+    }
+  };
 
   return (
     <div className="table-container">
@@ -29,7 +28,6 @@ const ProjectTable = () => {
         <table className="table">
           <thead>
             <tr>
-              <th>Image</th>
               <th>Tag</th>
               <th>Description</th>
               <th>Status</th>
@@ -41,13 +39,7 @@ const ProjectTable = () => {
             {projects.map((item) => (
               <tr key={item.id}>
                 <td>
-                  <div className="img-box">
-                    <span>Upload</span>
-                  </div>
-                </td>
-
-                <td>
-                  <span className="text">{item.tag}</span>
+                  <span className="text">{item["screen name"]}</span>
                 </td>
 
                 <td>
@@ -57,12 +49,12 @@ const ProjectTable = () => {
                 <td>
                   <span
                     className={
-                      item.status === "Published"
+                      item.state === "Published"
                         ? "status published"
                         : "status unpublished"
                     }
                   >
-                    {item.status}
+                    {item.state}
                   </span>
                 </td>
 

@@ -68,7 +68,15 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.delete-icon {
+  cursor: pointer;
+  transition: 0.2s ease;
+  filter: brightness(0) saturate(100%) invert(18%) sepia(48%) saturate(2500%) hue-rotate(240deg);
+}
 
+.delete-icon:hover {
+  transform: scale(1.1);
+}
 /* RIGHT */
 .msg-right {
   display: flex;

@@ -7,6 +7,7 @@ import ClassPerformance from "../Components/Layout/ClassPerformance";
 import ActiveUsers from "../Components/Layout/ActiveUsers";
 import TrafficByWebsite from "../Components/Layout/TrafficByWebsite";
 import StudentAlerts from "../Components/Layout/StudentAlerts";
+import { supabase } from "../supabaseClient";
 
 
 import "./Home.css";
@@ -14,7 +15,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="home">
-      
+
       <div className="layout">
 
         <Nav />
